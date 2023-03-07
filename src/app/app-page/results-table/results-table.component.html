@@ -1,0 +1,14 @@
+<div class="resultTableBlock">
+  <table>
+    <tr>
+      <td>X</td>
+      <td>Y</td>
+      <td>Result</td>
+    </tr>
+    <tr *ngFor="let point of appPage.points">
+      <td>{{point.x}}</td>
+      <td>{{point.y}}</td>
+      <td>{{(appPage.getResult(point.x, point.y, appPage.currPoint.r)) ? "Попал" : "Не попал"}}</td>
+    </tr>
+  </table>
+</div>

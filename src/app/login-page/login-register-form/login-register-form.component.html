@@ -1,0 +1,21 @@
+<div class="registerForm">
+  <form>
+    <div>
+      {{errorMessage}}
+    </div>
+    <div>
+      Username:
+      <input type="text" name="username" [(ngModel)]="user.username">
+    </div>
+    <div>
+      Password:
+      <input type="text" name="password" [(ngModel)]="user.password">
+    </div>
+    <div class="signInButton">
+      <input type="button" value="Войти" (click)="action('login')">
+    </div>
+    <div class="signUpButton">
+      <input type="button" value="Зарегистрироваться" (click)="action('register')">
+    </div>
+  </form>
+</div>

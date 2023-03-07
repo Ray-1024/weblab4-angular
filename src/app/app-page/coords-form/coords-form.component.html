@@ -1,0 +1,23 @@
+<div class="coordsForm">
+  <form>
+    <div>
+      {{errorMessage}}
+    </div>
+    <div>
+      X:
+      <input type="text" name="x" [(ngModel)]="appPage.currPoint.x" (input)="checkFields()">
+    </div>
+    <div>
+      Y:
+      <input type="text" name="y" [(ngModel)]="appPage.currPoint.y" (input)="checkFields()">
+    </div>
+    <div>
+      R:
+      <input type="text" name="r" [(ngModel)]="appPage.currPoint.r" (input)="checkFields()">
+    </div>
+    <div>
+      <input type="button" value="Выстрел" (click)="hit()">
+    </div>
+
+  </form>
+</div>

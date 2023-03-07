@@ -1,0 +1,24 @@
+div.resultTableBlock { /* SELECTOR_CLASS */
+  text-align: center !important;
+  border-radius: 15px;
+  border-style: solid;
+  border-width: 1px;
+  width: 60%;
+  margin: 20px auto;
+  padding: 10px;
+}
+
+table { /* SELECTOR_ELEMENT */
+  border-width: 1px;
+  border-color: black;
+  color: #05386B !important;
+  margin: 20px auto;
+}
+
+tr:nth-child(odd) {
+  color: #379683 !important;
+}
+
+tr:nth-child(even) {
+  color: #5CDB95 !important;
+}
